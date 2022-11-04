@@ -1,0 +1,280 @@
+
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+}
+body{
+  background-image: linear-gradient(rgba(151, 137, 137, 0.082),rgba(0, 0, 0, 0.7)),url(pic1.png);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+.content .pew p{
+  color: antiquewhite;
+  font-size: 25px;
+  margin-top: 5px;
+  margin-right: 250px;
+
+}
+.container2{
+    position: fixed;
+    height: 69px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+  
+}
+.container2 .navlink img{
+  height: 199px;
+  position:absolute;
+  width: 195px;
+  top:-59px;
+  left: 9px;
+}
+.container2 .navlink{
+  display: flex;
+ justify-content:end;
+  padding-top: 20px;
+  padding-left: 79px;
+
+}
+.container2 .navlink li{
+  padding-right: 100px;
+  list-style: none;
+  font-size: 20px;
+}
+.container2 li a{
+  text-decoration: none;
+  color: antiquewhite;
+ font-size: medium;
+}
+.content .pew{
+  color: antiquewhite;
+  font-size: 35px;
+  margin-top: 200px;
+  margin-right: 250px;
+
+}
+.content .micah{
+  margin-top: 20px;
+  margin-right:1500px;
+  height: 500px;
+}
+.content .micah .k{
+    width: 150px;
+    margin-left: 36%;
+    border: 2px solid antiquewhite;
+    height: 45px;
+    margin-top: 7px;
+    margin-bottom: 60px;
+}
+.micah .k .tin{
+  color:antiquewhite;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.micah .k:hover{
+  transform: translateY(-10px);
+}
+.content1{
+
+}
+.content1 .container{
+  height: 600px;
+  width: auto;
+}
+.content1 .container .box img{
+  position: absolute;
+  left: 800px;
+  top: 1050px;
+  height: 310px;
+  width: 650px;
+}
+.container .box .box1 h1{
+  color:antiquewhite;
+  font-size: medium;
+  margin-top: 70px;
+  margin-left: 30px;
+}
+.container .box .box2 h1{
+  color:antiquewhite;
+  font-size:medium;
+  margin-top: 98px;
+  margin-left: -230px;
+}
+.container .box .box3 h1{
+  color:antiquewhite;
+  font-size:50px;
+  margin-top: 50px;
+  text-align: center;
+}
+.container .box .box1 {
+  position: absolute;
+  margin-left: 500px;
+}
+.container .box .box2{
+  position: absolute;
+  margin-left:800px;
+}
+.content1 .container .box1 p{
+  width: 600px;
+  margin-left: 89px;
+  font-size: 13px;
+  color:antiquewhite;
+  margin-top:-15px;
+}
+.content1 .container .box2 p{
+  width: 600px;
+  margin-left: -170px;
+  font-size: 13px;
+  color:antiquewhite;
+  margin-top:-16px;
+
+}
+.content1 .container1{
+  height: 600px;
+  width: auto;
+}
+.container1 .box p{
+  width: 600px;
+  top: 1200px ;
+  margin-left: 36px;
+  
+
+}
+.container1 .box img{
+  position: absolute;
+  left: 800px;
+  top: 1650px;
+  height: 310px;
+  width: 650px;
+}
+
+.container1 .box h1{
+  color:antiquewhite;
+  font-size:50px;
+  margin-left: 1px;
+}
+.form{
+  position:absolute;
+  margin-top:250px;
+}
+.form input{
+  margin-top: 20px;
+  margin-left: 60px;
+  height: 40px;
+  width: 1100px;
+  margin-bottom: 10px;
+}
+.form button{
+  margin-top: 20px;
+  height: 40px;
+  margin-left: 42%;
+  width: 100px;
+}
+.form .result{
+  color: white;
+  font-size: 40px;
+}
+
+*{
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: all .2s linear;
+}
+
+section {
+  padding: 3rem 9%;
+
+}
+  
+  .footer{
+    height: 5px;
+    background: rgb(97, 125, 180);
+    width: auto;
+ 
+  }
+  .footer .Qlinks {
+    text-align: center;
+  }
+  .footer .Qlinks a{
+    margin-left:50px;
+    font-size:22px;
+    text-align: center;
+    color: black;
+  }
+    .footer{
+      position: relative;
+    }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+    overflow-x: hidden;
+  }
+  
+  html::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: #000;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: whitesmoke;
+    border-radius: 3rem;
+  }
+   
+  
+  @media (max-width: 1200px) {
+    section {
+      padding: 3rem 2rem;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+    .footer{
+      height:500px;
+
+    }
+    .footer .Qlinks{
+      position: absolute;
+      left:-120px;
+      width:380px;
+      margin-top: 170px;
+      
+    }
+    .h1{
+        margin-top: 1000px;
+    }
+  
+  @media (max-width: px768) {
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;  }
+  
+
+
+  }
+}
+  

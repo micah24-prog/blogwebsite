@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact us.css"/>
+    <link rel="stylesheet" href="">
+    <title>GALILA TRAVEL</title>
+</head>
+<body>
+
+   <section class="header">
+      <div class="container2">
+      
+         <ul class="navlink">
+            <li ><a href="index.html">HOME</a></li>
+            <li ><a href="about us.html">ABOUT US</a></li>
+            <li ><a href="contact us.html">CONTACT US</a></li>  
+            <img src="LOGON.png">
+          </ul>
+      </div>
+   </section> 
+
+<section class="content">
+      <div class="pew">
+         <h1>Make Your Tour Amazing With Us!</h1>
+         <p>Experience the summer capital of the Philippines, Baguio City.</p>
+      </div>
+
+      <div class="micah">
+         <div class="k">
+             <a href="#id"><h1 class="tin">View More</h1></a>  
+         </div>
+      </div>
+</section> 
+
+
+    
+   <section id="id"class="content1">
+      <div class="container">
+         <div class="box" data-aos="fade-up" data-aos-delay="150">
+            <div class="box1">
+               <h1 class="email">Email: </h1>
+               <p>travelgalila@gmail.com</p>
+            </div>
+            <div class="box2">
+               <h1 class="phone">Phone: </h1>
+            <p>09954602936</p>
+            </div>
+            <div class="box3">
+               <div class="box" data-aos="fade-up" data-aos-delay="150">
+                  <div class="box3">
+                  <h1 class="git">GET IN TOUCH</h1>
+          </div>
+            <div class="form">
+               <input type="email" id="email" placeholder="Enter Gmail" required>
+               <input type="textbox" id="message" placeholder="Message">
+               <button onclick = "SendEmail()">SEND</button>
+            </div>
+        </div>
+      </div>
+   </section>
+
+   <section class="footer">
+       <div class="Qlinks">
+         <a>©2022 | GALILA | Created by: Justine Sevilla | Micah Gonzales | Shaveen Tulao</a>
+
+       </div>
+   </section>
+</body>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("04rShW-phWUbCElnR");
+   })();
+</script>
+
+<script type="text/javascript">
+   function SendEmail()
+   {  
+      var mail = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+      var templateParams =
+      {
+         from_name: mail,
+         to_name: "admin",
+         message: message
+
+      };
+      emailjs.send('service_bd3i1qa', 'template_6krn959', templateParams)
+    .then(function(response) {
+       alert('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       alert('FAILED...', error);
+    });
+   }
+   
+</script>
+
+</html>
